@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#start{
+    width: 20%;
+    height: 15%;
+    /* border: 1px solid red */
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(67, 119, 67);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.main{
+    background-color: rgb(195, 228, 195);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.panel{
+    background-color: #fff;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.ptop{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(67, 119, 67);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+    padding: 0 30px;
+}
+.elem{
+    width: 20%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+}
+h2{
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-size: 1.8rem;
+    font-weight: 530;
+    color: white;
+}
+.box{
+    background-color: #fff;
+    width: 6vw;
+    height: 5vh;
+    font-size: 1.7rem;
+    /* padding: 3px 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border-radius: 5px;
+    color: rgb(32, 87, 32);
+}
+.pbtm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    height: calc(100% - 80px);
+    /* background-color: aquamarine; */
+    padding: 15px;
+
+}
+
+.bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.9vw;
+    height: 6.2vh;
+    background-color: rgb(82, 129, 82);
+    color: #fff;
+    font-size: 22px;
+    border-radius: 50%;
+}
+.bubble:hover{
+    background-color: rgb(48, 88, 48);
+    cursor: pointer;
+}
+#aftergame{
+    /* border: 1px solid red; */
+    width: 35%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(67, 119, 67);
+    justify-content: center;
+    border-radius: 10px;
+}
+#gameover{
+    color: #fff;
+    font-size: 50px;
+}
+#last-score{
+    color: #fff;
+}
+
+@media screen and (max-width:600px){
+    .main{
+        width: 100%;
+        height: 100%;
+    }
+    .ptop{
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .elem{
+        /* border: 1px solid red; */
+        width: 40%;
+    }
+    h2{
+        /* font-family: 'Courier New', Courier, monospace; */
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: white;
+    }
+    .box{
+        background-color: #fff;
+        width: 8.7vw;
+        height: 5vh;
+        font-size: 1.2rem;
+        font-weight: 800;     
+    }
+    #start{
+        width: 55%;
+        height: 15%;
+        font-size: 1.2rem;
+    }
+    #aftergame{
+        width: 90%;
+        height: 30%;
+    }
+    #gameover{
+        color: #fff;
+        font-size: 2.2rem;
+    }
+    #last-score{
+        color: #fff;
+        font-size: 1.3rem;
+    }
+    .bubble{
+        width: 6.8vw;
+        height: 3.7vh;
+        font-size: 1.2rem;
+    }
+}
